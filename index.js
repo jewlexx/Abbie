@@ -71,15 +71,17 @@ exports.log = function (
     // #endregion Timestamp
 
     switch (level) {
-        case level === 'error':
+        case 'error':
             message = chalk.red(message);
             break;
-        case level === 'good':
+        case 'good':
             message = chalk.green(message);
             break;
     }
 
     console.log(
-        `${chalk.green(time())} | ${chalk.cyan('[' + type + ']')} ${message}`,
+        `${chalk.green(time())} | ${chalk.cyanBright(
+            '[' + type + ']',
+        )} ${message}`,
     );
 };
