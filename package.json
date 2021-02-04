@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node ./tests/test.js",
-    "coverage": "nyc --reporter=lcov mocha && codecov"
+    "coverage": "nyc --reporter=lcov mocha tests/ && codecov"
   },
   "repository": {
     "type": "git",
