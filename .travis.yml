@@ -6,4 +6,4 @@ before_install:
 script:
   - set e
   - npm test
-  - codecov
+  - npm run-script coverage

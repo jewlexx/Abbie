@@ -4,7 +4,8 @@
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
   "scripts": {
-    "test": "node ./tests/test.js"
+    "test": "node ./tests/test.js",
+    "coverage": "nyc --reporter=lcov mocha && codecov"
   },
   "repository": {
     "type": "git",
