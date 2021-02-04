@@ -8,3 +8,7 @@ logger.log(
     __filename,
     'error',
 );
+
+logger.log("Finished Successfully!", __dirname, __filename, 'good');
+
+process.exit(0);

@@ -4,7 +4,7 @@
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha tests/ && codecov",
+    "test": "./tests/test.js",
     "codecov": "nyc --reporter=lcov mocha tests/ && codecov -t ${CODECOV_TOKEN}"
   },
   "repository": {
