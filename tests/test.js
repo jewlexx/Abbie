@@ -1,4 +1,4 @@
-const logger = require('../index');
+const logger = require('abbie');
 
 logger.log("Hey y'all wassup!", __dirname, __filename);
 
