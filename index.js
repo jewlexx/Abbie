@@ -16,11 +16,24 @@ exports.log = function (
     level = 'info',
     type = null,
 ) {
+    function capDir(string) {
+        const dirs = [''];
+        dirs.shift();
+        for (const word of string.split('\\')) {
+            dirs.push(cap(word));
+        }
+        return dirs.join('/');
+    }
+
+    function cap(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
     if (type === null) {
-        type = require('./scripts/capitalizeDir').run(
+        type = capDir(
             dirname.replace(dir, '') +
                 '/' +
-                require('./scripts/capitalizeFirstLetter').run(
+                cap(
                     require('path').basename(filename).split('.')[0],
                 ),
         );

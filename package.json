@@ -1,6 +1,6 @@
 {
-  "name": "minlog",
-  "version": "1.0.0",
+  "name": "abbie",
+  "version": "1.0.1",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
   "scripts": {
