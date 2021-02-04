@@ -1,6 +1,6 @@
 {
   "name": "abbie",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
   "scripts": {
