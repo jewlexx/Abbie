@@ -2,3 +2,10 @@
 
 # Abbie
 A simple, clean, javascript logger
+
+# Usage
+```
+const logger = require('abbie');
+
+logger.log('Sup folks!', __dirname, __filename) // Abbie relies on dirname and filename for the type naming scheme. A more elegant solution is coming soon!
+```

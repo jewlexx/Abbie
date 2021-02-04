@@ -1,6 +1,6 @@
 {
   "name": "abbie",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/jamesinaxx/Abbie.git"
   },
+  "keywords": [
+    "logger",
+    "simple",
+    "clean"
+  ],
   "author": "jamesinaxx",
   "license": "GPL-3.0",
   "bugs": {
