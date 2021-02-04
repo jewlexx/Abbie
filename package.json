@@ -1,6 +1,6 @@
 {
   "name": "abbie",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamesinaxx/CleanLogger.git"
+    "url": "git+https://github.com/jamesinaxx/Abbie.git"
   },
   "author": "jamesinaxx",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/jamesinaxx/CleanLogger/issues"
+    "url": "https://github.com/jamesinaxx/Abbie/issues"
   },
-  "homepage": "https://github.com/jamesinaxx/CleanLogger#readme",
+  "homepage": "https://github.com/jamesinaxx/Abbie#readme",
   "devDependencies": {
     "eslint": "^7.19.0",
     "prettier": "^2.2.1"
