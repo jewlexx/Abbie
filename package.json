@@ -1,5 +1,5 @@
 {
-  "name": "cleanlogger",
+  "name": "@jamesinaxx/cleanlogger",
   "version": "1.0.0",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
