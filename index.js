@@ -4,18 +4,9 @@ const dir = require('app-root-path') + '\\';
 /**
  *
  * @param {string} message The message you would like to log
- * @param {string} dirname The directory from the executing file
- * @param {string} filename The file name from the executing file
  * @param {string} level The level of log message (can be info, good or error)
- * @param {string} type The module name shown in the log message (it is not reccomended you override this)
  */
-exports.log = function (
-    message,
-    dirname,
-    filename,
-    level = 'info',
-    type = null,
-) {
+exports.log = function (message, level = 'info') {
     function capDir(string) {
         const dirs = [''];
         dirs.shift();
@@ -29,15 +20,7 @@ exports.log = function (
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
-    if (type === null) {
-        type = capDir(
-            dirname.replace(dir, '') +
-                '/' +
-                cap(
-                    require('path').basename(filename).split('.')[0],
-                ),
-        );
-    }
+    const type = capDir(require.main.filename.replace(dir, ''));
 
     // #region Timestamp
     function time() {

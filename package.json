@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jamesinaxx/Abbie#readme",
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "eslint": "^7.19.0",
     "nyc": "^15.1.0",
     "prettier": "^2.2.1"
