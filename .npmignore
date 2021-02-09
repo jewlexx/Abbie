@@ -2,6 +2,7 @@ tests/
 .nyc_output/
 coverage/
 tests/
+assets/
 .travis.yml
 .eslintrc.json
 .prettierrc.json
