@@ -4,3 +4,4 @@ node_modules/
 coverage/
 cleanTest/
 .nyc_output/
+pkgTest/
