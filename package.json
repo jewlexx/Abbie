@@ -1,6 +1,6 @@
 {
   "name": "abbie",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
   "types": "./types/index.d.ts",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jamesinaxx/Abbie#readme",
   "devDependencies": {
+    "@types/app-root-path": "^1.2.4",
     "@types/node": "^14.14.25",
     "dotenv": "^8.2.0",
     "eslint": "^7.19.0",

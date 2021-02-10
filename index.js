@@ -1,13 +1,14 @@
 /**
  *
  * @param {string} message The message you would like to log
- * @param {string} level The level of log message (can be info, good or error)
+ * @param {number} level The level of log message (0 = info, 1 = error, 2 = good news)
  */
 exports.log = function (message, level = 'info') {
     const chalk = require('chalk');
     function getName(string) {
         let name = string;
-        const dirs = [''].shift();
+        const dirs = [''];
+        dirs.shift();
         for (const word of name.split('\\')) {
             dirs.push(word.charAt(0).toUpperCase() + word.slice(1));
         }
@@ -17,7 +18,7 @@ exports.log = function (message, level = 'info') {
     }
 
     const type = getName(
-        require.main.filename.replace(require('app-root-path') + '\\', ''),
+        require.main.filename.replace(require('app-root-path').path + '\\', ''),
     )
         .replace('.js', '')
         .replace('.ts', '')
@@ -69,11 +70,13 @@ exports.log = function (message, level = 'info') {
     // #endregion Timestamp
 
     switch (level) {
-        case 'error':
+        case 1:
             message = chalk.red(message);
             break;
-        case 'good':
+        case 2:
             message = chalk.green(message);
+            break;
+        default:
             break;
     }
 

@@ -10,6 +10,9 @@ A simple, clean, javascript logger
 
 # Usage
 It's literally as easy as 1, 2... Not even a 3!
+
+**Please Note: This is my first npm package, ever! If something doesn't work, be patient, it will be fixed soon!**
+
 ```
 const logger = require('abbie');
 
