@@ -13,7 +13,7 @@ It's literally as easy as 1, 2... No 3!
 ```
 const logger = require('abbie');
 
-logger.log('Sup folks!');
-logger.log('YOU JUS GOT MONEY!', 'good');
-logger.log('Nope... You just lost it all', 'error');
+logger.log("Hey y'all wassup!");
+logger.log('Oopsie I made a booboo and this is an error', 'error');
+logger.log("Finished Successfully!", 'good');
 ```
