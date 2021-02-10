@@ -29,16 +29,16 @@ log('Oopsie I made a booboo and this is an error', 1);
 log('Finished Successfully!', 2);
 ```
 
-## Reference:
+## Reference
 ```
 message: 'Whatever... Literally any string', 
 
 level?: 0 = info, 1 = error or 2 = good // This is not required and will just default to 0 if no value is given
 ```
 
-## Roadmap:
+## Roadmap
 You can check out the development roadmap [here](https://github.com/jamesinaxx/Abbie/wiki/Roadmap)!
 
-### Credits:
+### Credits
 * Developed by jamesinaxx
 * With dependencies from [inxilpro](https://www.npmjs.com/~inxilpro) (app-root-path), [qix](https://www.npmjs.com/~qix) and [sindresorhus](https://www.npmjs.com/~sindresorhus) (chalk) 
