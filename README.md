@@ -12,5 +12,7 @@ A simple, clean, javascript logger
 ```
 const logger = require('abbie');
 
-logger.log('Sup folks!', __dirname, __filename) // Abbie relies on dirname and filename for the type naming scheme. A more elegant solution is coming soon!
+logger.log('Sup folks!');
+logger.log('YOU JUS GOT MONEY!', 'good');
+logger.log('Nope... You just lost it all', 'error');
 ```
