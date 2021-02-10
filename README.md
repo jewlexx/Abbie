@@ -14,9 +14,23 @@ It's literally as easy as 1, 2... Not even a 3!
 **Please Note: This is my first npm package, ever! If something doesn't work, be patient, it will be fixed soon!**
 
 ```
+// Basic Javascript version
 const logger = require('abbie');
 
 logger.log("Hey y'all wassup!");
-logger.log('Oopsie I made a booboo and this is an error', 'error');
-logger.log("Finished Successfully!", 'good');
+logger.log('Oopsie I made a booboo and this is an error', 1);
+logger.log("Finished Successfully!", 2);
+
+// Typescript version
+import log from 'abbie';
+
+log("Hey y'all wassup!");
+log('Oopsie I made a booboo and this is an error', 1);
+log("Finished Successfully!", 2);
 ```
+
+## Reference:
+log(
+    message: "Whatever... Literally",
+    level?: 0 = info, 1 = error or 2 = good
+)
