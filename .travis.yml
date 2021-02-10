@@ -6,4 +6,5 @@ before_install:
 script:
   - set e
   - npm test
-  - npm run-script coverage
+  - npm run tstest
+  - npm run coverage
