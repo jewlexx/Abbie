@@ -29,7 +29,7 @@ log('Oopsie I made a booboo and this is an error', 1);
 log('Finished Successfully!', 2);
 ```
 
-**Test it out [![here]](https://runkit.com/embed/g7az5h5ikphw)**
+**Test it out on npm runkit [here](https://runkit.com/embed/g7az5h5ikphw)**
 
 ## Reference
 ```
