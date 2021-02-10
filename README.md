@@ -17,21 +17,21 @@ It's literally as easy as 1, 2... Not even a 3!
 // Basic Javascript version
 const logger = require('abbie');
 
-logger.log("Hey y'all wassup!");
+logger.log('Hey y'all wassup!');
 logger.log('Oopsie I made a booboo and this is an error', 1);
-logger.log("Finished Successfully!", 2);
+logger.log('Finished Successfully!', 2);
 
 // Typescript version
 import log from 'abbie';
 
-log("Hey y'all wassup!");
+log('Hey y'all wassup!');
 log('Oopsie I made a booboo and this is an error', 1);
-log("Finished Successfully!", 2);
+log('Finished Successfully!', 2);
 ```
 
 ## Reference:
 ```
-message: "Whatever... Literally any string", 
+message: 'Whatever... Literally any string', 
 
 level?: 0 = info, 1 = error or 2 = good // This is not required and will just default to 0 if no value is given
 ```
