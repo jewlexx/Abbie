@@ -7,20 +7,23 @@ const dir = require('app-root-path') + '\\';
  * @param {string} level The level of log message (can be info, good or error)
  */
 exports.log = function (message, level = 'info') {
-    function capDir(string) {
+    function getName(string) {
+        let name = string;
         const dirs = [''];
         dirs.shift();
-        for (const word of string.split('\\')) {
-            dirs.push(cap(word));
+        for (const word of name.split('\\')) {
+            dirs.push(word.charAt(0).toUpperCase() + word.slice(1));
         }
-        return dirs.join('/');
+        name = dirs.join('/');
+
+        return name;
     }
 
-    function cap(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-
-    const type = capDir(require.main.filename.replace(dir, ''));
+    const type = getName(require.main.filename.replace(dir, ''))
+        .replace('.js', '')
+        .replace('.ts', '')
+        .replace('.jsx', '')
+        .replace('.tsx', '');
 
     // #region Timestamp
     function time() {
