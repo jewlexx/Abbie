@@ -7,8 +7,7 @@ exports.log = function (message, level = 'info') {
     const chalk = require('chalk');
     function getName(string) {
         let name = string;
-        const dirs = [''];
-        dirs.shift();
+        const dirs = [''].shift();
         for (const word of name.split('\\')) {
             dirs.push(word.charAt(0).toUpperCase() + word.slice(1));
         }
