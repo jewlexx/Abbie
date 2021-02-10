@@ -6,7 +6,6 @@
   "types": "./types/index.d.ts",
   "scripts": {
     "test": "node ./tests/test.js",
-    "tstest": "npx ts-node ./tests/test.ts",
     "coverage": "exit 0",
     "not-working": "nyc --reporter=lcov mocha tests/ && codecov"
   },

@@ -5,6 +5,5 @@ before_install:
   - npm install -g codecov
 script:
   - set e
-  - npm test
-  - npm run tstest
-  - npm run coverage
+  - npm test --if-present
+  - npm run coverage --if-present
