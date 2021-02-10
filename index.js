@@ -1,12 +1,10 @@
-const chalk = require('chalk');
-const dir = require('app-root-path') + '\\';
-
 /**
  *
  * @param {string} message The message you would like to log
  * @param {string} level The level of log message (can be info, good or error)
  */
 exports.log = function (message, level = 'info') {
+    const chalk = require('chalk');
     function getName(string) {
         let name = string;
         const dirs = [''];
@@ -19,7 +17,9 @@ exports.log = function (message, level = 'info') {
         return name;
     }
 
-    const type = getName(require.main.filename.replace(dir, ''))
+    const type = getName(
+        require.main.filename.replace(require('app-root-path') + '\\', ''),
+    )
         .replace('.js', '')
         .replace('.ts', '')
         .replace('.jsx', '')
