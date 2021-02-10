@@ -31,6 +31,9 @@ log("Finished Successfully!", 2);
 
 ## Reference:
 log(
+
     message: "Whatever... Literally",
+
     level?: 0 = info, 1 = error or 2 = good
+    
 )
