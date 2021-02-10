@@ -1,7 +1,5 @@
 node_modules/
 .idea/
 .env
-coverage/
 cleanTest/
-.nyc_output/
 pkgTest/
