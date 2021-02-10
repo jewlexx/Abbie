@@ -9,7 +9,7 @@ A simple, clean, javascript logger
 [![Sreenshot](./assets/Screenshot.png)](https://www.npmjs.com/package/abbie)
 
 # Usage
-It's literally as easy as 1, 2... No 3!
+It's literally as easy as 1, 2... Not even a 3!
 ```
 const logger = require('abbie');
 
