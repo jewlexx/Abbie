@@ -6,8 +6,7 @@
   "types": "./types/index.d.ts",
   "scripts": {
     "test": "node ./tests/test.js",
-    "coverage": "exit 0",
-    "not-working": "nyc --reporter=lcov mocha tests/ && codecov"
+    "coverage": "covecov"
   },
   "repository": {
     "type": "git",
