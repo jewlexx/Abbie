@@ -1,5 +1,5 @@
 require('dotenv').config();
-const logger = require('../index');
+import logger from '../index';
 
 logger.log("Hey y'all wassup!");
 
