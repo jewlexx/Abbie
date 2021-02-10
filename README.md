@@ -38,3 +38,7 @@ level?: 0 = info, 1 = error or 2 = good // This is not required and will just de
 
 ## Roadmap:
 You can check out the development roadmap [here](https://github.com/jamesinaxx/Abbie/wiki/Roadmap)!
+
+### Credits:
+* Developed by jamesinaxx
+* With dependencies from [inxilpro](https://www.npmjs.com/~inxilpro) (app-root-path), [qix](https://www.npmjs.com/~qix) and [sindresorhus](https://www.npmjs.com/~sindresorhus) (chalk) 
