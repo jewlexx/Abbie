@@ -1,9 +1,8 @@
 require('dotenv').config();
-const abbie = require('../dist/index');
-abbie.
+const abbie = require('../index');
 
-log("Hey y'all wassup!");
+abbie.log("Hey y'all wassup!");
 
-log('Oopsie I made a booboo and this is an error', 1);
+abbie.log('Oopsie I made a booboo and this is an error', 1);
 
-log("Finished Successfully!", 2);
+abbie.log("Finished Successfully!", 2);

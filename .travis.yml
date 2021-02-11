@@ -3,7 +3,7 @@ language:
 node_js: 14.15.1
 script:
   - set e
-  - npm run build --if-present
+  - tsc
   - npm test --if-present
   - npm run tstest --if-present
   - npx codecov

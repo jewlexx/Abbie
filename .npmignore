@@ -1,5 +1,10 @@
-*
-!dist/
-!package.json
-!readme.md
-!LICENSE
+tests/
+.nyc_output/
+coverage/
+tests/
+assets/
+.travis.yml
+.eslintrc.json
+.prettierrc.json
+.codecov.yml
+.gitattributes
