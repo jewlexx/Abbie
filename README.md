@@ -6,7 +6,7 @@ A simple, clean, javascript logger
 [![codecov](https://codecov.io/gh/jamesinaxx/Abbie/branch/public/graph/badge.svg?token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
 [![npm version](https://badge.fury.io/js/abbie.svg)](https://badge.fury.io/js/abbie)
 
-[![Sreenshot](./assets/Screenshot.png)](https://www.npmjs.com/package/abbie)
+[![Sreenshot](https://raw.githubusercontent.com/jamesinaxx/Abbie/public/assets/Screenshot.png)]()
 
 # Usage
 It's literally as easy as 1, 2... Not even a 3!
@@ -28,6 +28,8 @@ log('Hey y'all wassup!');
 log('Oopsie I made a booboo and this is an error', 1);
 log('Finished Successfully!', 2);
 ```
+
+**For a more in-depth look at calling Abbie, check out [the wiki](https://github.com/jamesinaxx/Abbie/wiki/Reference)
 
 **Test it out on npm runkit [here](https://runkit.com/embed/g7az5h5ikphw)**
 
