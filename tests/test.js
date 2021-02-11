@@ -1,8 +1,8 @@
 require('dotenv').config();
-const logger = require('../dist/index').default;
+const logger = require('../dist/index');
 
-logger("Hey y'all wassup!");
+logger.log("Hey y'all wassup!");
 
-logger('Oopsie I made a booboo and this is an error', 1);
+logger.log('Oopsie I made a booboo and this is an error', 1);
 
-logger("Finished Successfully!", 2);
+logger.log("Finished Successfully!", 2);

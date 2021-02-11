@@ -3,7 +3,7 @@
  * @param {string} message The message you would like to log
  * @param {number} level The level of log message (0 = info, 1 = error, 2 = good news)
  */
-export default function log(message: string, level: number = 0) {
+export function log(message: string, level: number = 0) {
     const chalk = require('chalk');
     function getName(string) {
         let name = string;
