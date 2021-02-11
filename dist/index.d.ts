@@ -1,1 +1,1 @@
-export default function log(message: string, level?: number = 0): void;
+export default function log(message: string, level?: number): void;

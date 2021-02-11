@@ -3,7 +3,6 @@ tests/
 coverage/
 tests/
 assets/
-!dist/
 .travis.yml
 .eslintrc.json
 .prettierrc.json
