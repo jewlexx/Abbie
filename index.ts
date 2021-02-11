@@ -1,9 +1,4 @@
-/**
- *
- * @param {string} message The message you would like to log
- * @param {number} level The level of log message (0 = info, 1 = error, 2 = good news)
- */
-exports.log = function log(message, level = 0) {
+export default function log(message: string, level: number = 0) {
     const chalk = require('chalk');
     function getName(string) {
         let name = string;
@@ -36,30 +31,30 @@ exports.log = function log(message, level = 0) {
             hour = hour - 12;
         }
 
-        hour = hour.toString();
+        let hourS = hour.toString();
 
-        if (hour.length == 1) {
-            hour = '0' + hour.toString();
+        if (hourS.length == 1) {
+            hourS = '0' + hour.toString();
         }
         // #endregion Hour
 
         // #region Minute
         let minute = date.getMinutes();
 
-        minute = minute.toString();
+        let minuteS = minute.toString();
 
-        if (minute.length == 1) {
-            minute = '0' + minute.toString();
+        if (minuteS.length == 1) {
+            minuteS = '0' + minute.toString();
         }
         // #endregion Minute
 
         // #region second
         let second = date.getSeconds();
 
-        second = second.toString();
+        let secondS = second.toString();
 
-        if (second.length == 1) {
-            second = '0' + second.toString();
+        if (secondS.length == 1) {
+            secondS = '0' + second.toString();
         }
         // #endregion second
 
@@ -85,4 +80,4 @@ exports.log = function log(message, level = 0) {
             '[' + type + ']',
         )} ${message}`,
     );
-};
+}
