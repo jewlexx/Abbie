@@ -5,4 +5,5 @@ script:
   - set e
   - tsc
   - npm test --if-present
+  - npm tstest --if-presents
   - npx codecov
