@@ -29,6 +29,8 @@ log('Oopsie I made a booboo and this is an error', 1);
 log('Finished Successfully!', 2);
 ```
 
+**For a more in-depth look at calling Abbie, check out [the wiki](https://github.com/jamesinaxx/Abbie/wiki/Reference)
+
 **Test it out on npm runkit [here](https://runkit.com/embed/g7az5h5ikphw)**
 
 ## Reference
