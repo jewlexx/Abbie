@@ -1,5 +1,7 @@
 require('dotenv').config();
-import { log } from '../dist/index';
+import abbie from '../dist/index';
+
+abbie.
 
 log("Hey y'all wassup!");
 
