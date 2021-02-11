@@ -6,7 +6,7 @@ A simple, clean, javascript logger
 [![codecov](https://codecov.io/gh/jamesinaxx/Abbie/branch/public/graph/badge.svg?token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
 [![npm version](https://badge.fury.io/js/abbie.svg)](https://badge.fury.io/js/abbie)
 
-[![Sreenshot](./assets/Screenshot.png)](https://www.npmjs.com/package/abbie)
+[![Sreenshot](https://raw.githubusercontent.com/jamesinaxx/Abbie/public/assets/Screenshot.png)]
 
 # Usage
 It's literally as easy as 1, 2... Not even a 3!
