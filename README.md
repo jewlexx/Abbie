@@ -15,21 +15,21 @@ It's literally as easy as 1, 2... Not even a 3!
 
 ```
 // Basic Javascript version
-const logger = require('abbie');
+const abbie = require('abbie');
 
-logger.log('Hey y'all wassup!');
-logger.log('Oopsie I made a booboo and this is an error', 1);
-logger.log('Finished Successfully!', 2);
+abbie.log('Hey y'all wassup!');
+abbie.log('Oopsie I made a booboo and this is an error', 1);
+abbie.log('Finished Successfully!', 2);
 
 // Typescript version
-import log from 'abbie';
+import { log } from 'abbie';
 
 log('Hey y'all wassup!');
 log('Oopsie I made a booboo and this is an error', 1);
 log('Finished Successfully!', 2);
 ```
 
-**For a more in-depth look at calling Abbie, check out [the wiki](https://github.com/jamesinaxx/Abbie/wiki/Reference)
+**For a more in-depth look at calling Abbie, check out [the wiki](https://github.com/jamesinaxx/Abbie/wiki/Reference)**
 
 **Test it out on npm runkit [here](https://runkit.com/embed/g7az5h5ikphw)**
 
