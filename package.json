@@ -3,10 +3,10 @@
   "version": "1.1.2",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./typings/index.d.ts",
   "scripts": {
-    "test": "node ./tests/test.js",
-    "tstest": "npx tsc && npx ts-node ./tests/test.ts",
+    "jstest": "node ./tests/JSTest.js",
+    "tstest": "npx tsc && npx ts-node ./tests/TSTest.ts",
     "coverage": "covecov"
   },
   "repository": {
