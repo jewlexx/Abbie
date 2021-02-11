@@ -1,12 +1,13 @@
 {
   "name": "abbie",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A simple, clean, javascript logger",
   "main": "index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./typings/index.d.ts",
   "scripts": {
-    "test": "node ./tests/test.js",
-    "tstest": "npx tsc && npx ts-node ./tests/test.ts",
+    "test": "npm run jstest && npm run tstest",
+    "jstest": "node ./tests/JSTest.js",
+    "tstest": "npx tsc && npx ts-node ./tests/TSTest.ts",
     "coverage": "covecov"
   },
   "repository": {

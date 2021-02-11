@@ -1,29 +1,42 @@
+const slash = function() {
+    if (process.platform.includes('win')) {
+        return '\\';
+    } else {
+        return '/';
+    }
+};
+
 /**
+ * ### Logs the given message to the console following the given format:
+ * `{TIME} | {MODULE} | {MESSAGE}`
+ *
+ * **For more info on each of these and more, check the {@link https://github.com/jamesinaxx/Abbie/wiki/Reference wiki on github}**
+ *
  *
  * @param {string} message The message you would like to log
  * @param {number} level The level of log message (0 = info, 1 = error, 2 = good news)
  */
-exports.log = function log(message, level = 0) {
-    const chalk = require('chalk');
+function log(message, level = 0) {
     function getName(string) {
         let name = string;
         const dirs = [''];
         dirs.shift();
-        for (const word of name.split('\\')) {
+        for (const word of name.split(slash())) {
             dirs.push(word.charAt(0).toUpperCase() + word.slice(1));
         }
-        name = dirs.join('/');
+        name = dirs
+            .join('/')
+            .replace('.js', '')
+            .replace('.ts', '')
+            .replace('.jsx', '')
+            .replace('.tsx', '');
 
         return name;
     }
 
     const type = getName(
-        require.main.filename.replace(require('app-root-path').path + '\\', ''),
-    )
-        .replace('.js', '')
-        .replace('.ts', '')
-        .replace('.jsx', '')
-        .replace('.tsx', '');
+        require.main.filename.replace(require('app-root-path').path + slash(), ''),
+    );
 
     // #region Timestamp
     function time() {
@@ -69,20 +82,29 @@ exports.log = function log(message, level = 0) {
     }
     // #endregion Timestamp
 
+    const chalk = require('chalk');
+
+    let lvl = '';
+
     switch (level) {
         case 1:
             message = chalk.red(message);
+            lvl = chalk.red('Error');
             break;
         case 2:
             message = chalk.green(message);
+            lvl = chalk.green('Good ');
             break;
         default:
+            lvl = 'Info ';
             break;
     }
 
     console.log(
-        `${chalk.green(time())} | ${chalk.cyanBright(
+        `${chalk.green(time())} | ${lvl} | ${chalk.cyanBright(
             '[' + type + ']',
         )} ${message}`,
     );
-};
+}
+
+module.exports.log = log;
