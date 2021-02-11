@@ -1,5 +1,6 @@
 require('dotenv').config();
-const log = require('../dist/index');
+const abbie = require('../dist/index');
+abbie.
 
 log("Hey y'all wassup!");
 
