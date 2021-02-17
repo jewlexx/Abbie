@@ -5,7 +5,7 @@
   "main": "main.js",
   "types": "./typings/",
   "scripts": {
-    "test": "npm run jstest && npm run tstest",
+    "test": "npm run jstest --if-present && npm run tstest --if-present",
     "jstest": "node ./tests/JSTest.js",
     "tstest": "npx tsc && npx ts-node ./tests/TSTest.ts",
     "coverage": "covecov"
