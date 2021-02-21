@@ -1,5 +1,5 @@
 require('dotenv').config();
-const abbie = require('../main');
+const abbie = require('..');
 
 abbie.log("Hey y'all wassup");
 
