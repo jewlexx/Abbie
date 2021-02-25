@@ -3,11 +3,11 @@ A simple, clean, javascript logger
 
 [![Screenshot](https://raw.githubusercontent.com/jamesinaxx/Abbie/public/assets/Screenshot.png)]()
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.com/jamesinaxx/Abbie.svg?branch=public)](https://travis-ci.com/jamesinaxx/Abbie)
-[![DeepScan grade](https://deepscan.io/api/teams/11350/projects/15794/branches/322083/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11350&pid=15794&bid=322083) 
-[![codecov](https://codecov.io/gh/jamesinaxx/Abbie/branch/public/graph/badge.svg?token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
-[![npm version](https://badge.fury.io/js/abbie.svg)](https://badge.fury.io/js/abbie)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.com/jamesinaxx/Abbie.svg?branch=public&style=flat-square)](https://travis-ci.com/jamesinaxx/Abbie)
+[![DeepScan grade](https://deepscan.io/api/teams/11350/projects/15794/branches/322083/badge/grade.svg?style=flat-square)](https://deepscan.io/dashboard#view=project&tid=11350&pid=15794&bid=322083) 
+[![codecov](https://codecov.io/gh/jamesinaxx/Abbie/branch/public/graph/badge.svg?token=VZFHWZ6RER&style=flat-square)](https://codecov.io/gh/jamesinaxx/Abbie) 
+[![npm version](https://badge.fury.io/js/abbie.svg?style=flat-square)](https://badge.fury.io/js/abbie)
 
 # Usage
 It's literally as easy as 1, 2... Not even a 3!
