@@ -7,6 +7,7 @@ A simple, clean, javascript logger
 [![Build Status](https://img.shields.io/travis/com/jamesinaxx/abbie?label=Tests&style=for-the-badge)](https://travis-ci.com/jamesinaxx/Abbie)
 [![codecov](https://img.shields.io/codecov/c/gh/jamesinaxx/Abbie/public?style=for-the-badge&token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
 [![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=for-the-badge)](http://npmjs.com/abbie)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/jamesinaxx/abbie?style=for-the-badge)
 
 # Usage
 It's literally as easy as 1, 2... Not even a 3!
