@@ -1,7 +1,8 @@
-language:
-  node_js
+language: node_js
 node_js: 14.15.1
+env:
+    - DEBUG=true
 script:
-  - set e
-  - tsc
-  - npm run coverage
+    - set e
+    - tsc
+    - npm run coverage
