@@ -12,10 +12,9 @@ function log(message, level = 0) {
     const debugBool = process.env.DEBUG == 'true';
 
     const type = require('./lib/getName').getName(
-        require.main.filename.replace(
-            require('app-root-path').path + require('./lib/slash').slash(),
-            '',
-        ),
+        require.main.filename
+            .replace(require('app-root-path').path, '')
+            .substring(1),
     );
 
     const chalk = require('chalk');
