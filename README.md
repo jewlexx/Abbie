@@ -4,11 +4,10 @@ A simple, clean, javascript logger
 
 ![Screenshot](./assets/gifs/rendered.gif)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.com/jamesinaxx/Abbie.svg?branch=public)](https://travis-ci.com/jamesinaxx/Abbie)
-[![DeepScan grade](https://deepscan.io/api/teams/11350/projects/15794/branches/322083/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11350&pid=15794&bid=322083) 
-[![codecov](https://codecov.io/gh/jamesinaxx/Abbie/branch/public/graph/badge.svg?token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
-[![npm version](https://badge.fury.io/js/abbie.svg)](https://badge.fury.io/js/abbie)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Build Status](https://img.shields.io/travis/com/jamesinaxx/abbie?label=Tests&style=for-the-badge)](https://travis-ci.com/jamesinaxx/Abbie)
+[![codecov](https://img.shields.io/codecov/c/gh/jamesinaxx/Abbie/public?style=for-the-badge&token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
+[![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=for-the-badge)](http://npmjs.com/abbie)
 
 # Usage
 
