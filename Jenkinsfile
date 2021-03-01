@@ -9,4 +9,8 @@ pipeline {
     }
 
   }
+  environment {
+    DEBUG = 'true'
+    CODECOV_TOKEN = '7095f287-2ab4-4492-bd7d-cfb042624a55'
+  }
 }
