@@ -1,10 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('JS Build') {
+    stage('Setup Env') {
       steps {
         echo 'Beggining Abbie Build'
-        bat 'SET DEBUG=true &&  node -v &&  npm -v &&  npm ci &&  set e &&  npx tsc &&  npm run coverage'
+        bat(script: 'SET DEBUG=true &&  node -v &&  npm -v &&  npm ci &&  set e &&  npx tsc', label: 'Setup Env Script')
+      }
+    }
+
+    stage('Build') {
+      steps {
+        bat(script: 'npm run coverage', label: 'Build script')
       }
     }
 
