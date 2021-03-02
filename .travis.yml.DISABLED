@@ -6,3 +6,5 @@ script:
     - set e
     - tsc
     - npm run coverage
+
+Literally just to pass build
