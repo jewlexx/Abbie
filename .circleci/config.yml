@@ -1,0 +1,17 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.2.0
+jobs:
+  build-and-test:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - node/install-packages
+      - run: node -v && npm -v
+      - run: npm run ci-build
+
+workflows:
+  Build: 
+    jobs:
+      - build-and-test
