@@ -4,13 +4,18 @@ pipeline {
     stage('Setup Env') {
       steps {
         echo 'Beggining Abbie Build'
-        bat(script: 'SET DEBUG=true &&  node -v &&  npm -v &&  npm ci &&  set e &&  npx tsc', label: 'Setup Env Script')
+        bat(script: 'node -v &&  npm -v &&  npm ci &&  set e &&  npx tsc', label: 'Setup Env Script')
       }
     }
 
     stage('Build') {
       steps {
         bat(script: 'npm run coverage', label: 'Build script')
+      }
+    }
+    stage('Finish') {
+      steps {
+        echo 'Successfully built Abbie'
       }
     }
 
