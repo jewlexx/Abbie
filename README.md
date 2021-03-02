@@ -2,12 +2,12 @@
 
 A simple, clean, javascript logger
 
-![Screenshot](./assets/gifs/rendered.gif)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Build Status](https://img.shields.io/travis/com/jamesinaxx/abbie?label=Tests&style=flat-square)](https://travis-ci.com/jamesinaxx/Abbie)
 [![codecov](https://img.shields.io/codecov/c/gh/jamesinaxx/Abbie/public?style=flat-square&token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
 [![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=flat-square)](http://npmjs.com/abbie)
+
+![Screenshot](./assets/gifs/rendered.gif)
 
 # Usage
 
