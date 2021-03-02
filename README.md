@@ -3,7 +3,7 @@
 A simple, clean, javascript logger
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Build Status](https://img.shields.io/travis/com/jamesinaxx/abbie?label=Tests&style=flat-square)](https://travis-ci.com/jamesinaxx/Abbie)
+[![Build Status](https://jamesinaxx.me/buildStatus/icon?job=AbbiePipeline%2Fpublic&style=flat-square)](https://jamesinaxx.me/job/AbbiePipeline/job/public/)
 [![codecov](https://img.shields.io/codecov/c/gh/jamesinaxx/Abbie/public?style=flat-square&token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie) 
 [![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=flat-square)](http://npmjs.com/abbie)
 
