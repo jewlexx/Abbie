@@ -6,7 +6,7 @@ orbs:
 jobs:
   build-and-test:
     docker:
-      - image: cimg/node:lts
+      - image: cimg/node:current
     steps:
       - checkout
       - node/install-packages
