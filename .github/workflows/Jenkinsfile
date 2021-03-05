@@ -1,5 +1,10 @@
 pipeline {
   agent any
+  
+  tools {
+    nodejs 'Latest NodeJS'
+  }
+  
   stages {
     stage('Setup Env') {
       steps {
