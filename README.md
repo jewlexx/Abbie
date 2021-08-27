@@ -1,13 +1,11 @@
-# Abbie
-
-A simple, clean, javascript logger
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=flat-square)](http://npmjs.com/abbie)
 
 <!-- [![Build Status](https://jamesinaxx.me/buildStatus/icon?job=AbbiePipeline%2Fpublic&style=flat-square)](https://jamesinaxx.me/job/AbbiePipeline/job/public/) -->
 
-[![codecov](https://img.shields.io/codecov/c/gh/jamesinaxx/Abbie/public?style=flat-square&token=VZFHWZ6RER)](https://codecov.io/gh/jamesinaxx/Abbie)
-[![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=flat-square)](http://npmjs.com/abbie)
+# Abbie
+
+A simple, clean, javascript logger
 
 ![Usage](https://raw.githubusercontent.com/jamesinaxx/Abbie/public/assets/gifs/rendered.gif)
 
