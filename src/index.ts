@@ -26,8 +26,11 @@ function time() {
   return time;
 }
 
-function print(type: string, message: any, args: any[]) {
-  console.log(`${chalk.green(time())} | ${type} | ${message}`, ...args);
+function print(colour: chalk.Chalk, type: string, message: any, args: any[]) {
+  console.log(
+    `${chalk.green(time())} | ${colour(type)} | ${colour(message)}`,
+    ...args,
+  );
 }
 
 /**
@@ -35,23 +38,23 @@ function print(type: string, message: any, args: any[]) {
  * `{TIME} | {LEVEL} | {MESSAGE}`
  */
 export function log(message: any, ...args: any[]): void {
-  print('Info ', message, args);
+  print(chalk.white, 'Info ', message, args);
 }
 
 export function debug(message: any, ...args: any[]): void {
   if (process.env.DEBUG === 'true') return;
 
-  print(chalk.grey('Debug'), message, args);
+  print(chalk.grey, 'Debug', message, args);
 }
 
 export function warn(message: any, ...args: any[]) {
-  print(chalk.yellow('Warn '), message, args);
+  print(chalk.yellow, 'Warn ', message, args);
 }
 
 export function error(message: any, ...args: any[]) {
-  print(chalk.red('Error'), message, args);
+  print(chalk.red, 'Error', message, args);
 }
 
 export function good(message: any, ...args: any[]) {
-  print(chalk.green('Good '), message, args);
+  print(chalk.green, 'Good ', message, args);
 }
