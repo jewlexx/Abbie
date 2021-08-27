@@ -7,7 +7,7 @@
 
 A simple, clean, javascript logger
 
-![Usage](https://raw.githubusercontent.com/jamesinaxx/Abbie/public/assets/gifs/rendered.gif)
+![Usage](https://raw.githubusercontent.com/jamesinaxx/Abbie/public/assets/gifs/render.gif)
 
 ## Usage
 
