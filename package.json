@@ -8,10 +8,10 @@
   "scripts": {
     "build": "node build/index.js",
     "pretest": "yarn build",
-    "test": "yarn pretest && npm run jstest --if-present && npm run tstest --if-present",
-    "jstest": "node ./tests/JSTest.js",
-    "tstest": "npx ts-node ./tests/TSTest.ts",
-    "coverage": "npx nyc npm test && npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov",
+    "test": "yarn pretest && yarn test:js && yarn test:ts",
+    "test:js": "node tests/test.js",
+    "test:ts": "npx ts-node tests/test.ts",
+    "coverage": "npx nyc yarn test && npx nyc report --reporter=text-lcov > coverage.lcov && npx codecov",
     "ci-build": "set e && yarn build && npm run coverage"
   },
   "repository": {
