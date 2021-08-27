@@ -5,25 +5,25 @@ const Green = '\x1b[32m';
 const Yellow = '\x1b[33m';
 const Gray = '\x1b[90m';
 
-function time() {
+function getTime() {
   const date = new Date();
 
   let hour = date.getHours().toString();
 
-  if (hour.length == 1) {
-    hour = '0' + hour;
+  if (hour.length === 1) {
+    hour = `0${hour}`;
   }
 
   let minute = date.getMinutes().toString();
 
-  if (minute.length == 1) {
-    minute = '0' + minute;
+  if (minute.length === 1) {
+    minute = `0${minute}`;
   }
 
   let second = date.getSeconds().toString();
 
-  if (second.length == 1) {
-    second = '0' + second;
+  if (second.length === 1) {
+    second = `0${second}`;
   }
 
   const time = `${hour}:${minute}:${second}`;
@@ -36,7 +36,7 @@ function format(modifier: string, message: any): string {
 }
 
 function print(colour: string, type: string, message: any, args: any[]) {
-  console.log(`${format(Underline, time())} | ${format(colour, type)} | ${format(colour, message)}`, ...args);
+  console.log(`${format(Underline, getTime())} | ${format(colour, type)} | ${format(colour, message)}`, ...args);
 }
 
 /**
