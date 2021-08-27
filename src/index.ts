@@ -28,7 +28,7 @@ function time() {
 
 function print(colour: chalk.Chalk, type: string, message: any, args: any[]) {
   console.log(
-    `${chalk.green(time())} | ${colour(type)} | ${colour(message)}`,
+    `${chalk.underline(time())} | ${colour(type)} | ${colour(message)}`,
     ...args,
   );
 }
