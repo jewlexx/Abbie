@@ -1,4 +1,5 @@
 const fs = require('fs/promises');
+const { existsSync } = require('fs');
 const path = require('path');
 const ncc = require('@vercel/ncc');
 
@@ -17,7 +18,7 @@ ncc(path.resolve(__dirname, '..', 'src', 'index.ts'), {
 }).then(async ({ code, assets }) => {
   const distDir = path.resolve(__dirname, '..', 'dist');
 
-  if (fs.existsSync(distDir)) {
+  if (existsSync(distDir)) {
     await fs.rm(distDir, { recursive: true, force: true });
   }
   await fs.mkdir(distDir);

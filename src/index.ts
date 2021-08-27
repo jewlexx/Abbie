@@ -42,25 +42,56 @@ function print(colour: string, type: string, message: any, args: any[]) {
 /**
  * ### Logs the given message to the console following the given format:
  * `{TIME} | {LEVEL} | {MESSAGE}`
+ *
+ * @param {any} message The message to log
+ * @param {...any[]} args The optional arguments
  */
 export function log(message: any, ...args: any[]): void {
   print('', 'Info ', message, args);
 }
 
+/**
+ * ### Logs the given message to the console following the given format:
+ * `{TIME} | {LEVEL} | {MESSAGE}`
+ *
+ * @param {any} message The message to log
+ * @param {...any[]} args The optional arguments
+ */
 export function debug(message: any, ...args: any[]): void {
   if (process.env.DEBUG === 'true') return;
 
   print(Gray, 'Debug', message, args);
 }
 
+/**
+ * ### Logs the given message to the console following the given format:
+ * `{TIME} | {LEVEL} | {MESSAGE}`
+ *
+ * @param {any} message The message to log
+ * @param {...any[]} args The optional arguments
+ */
 export function warn(message: any, ...args: any[]) {
   print(Yellow, 'Warn ', message, args);
 }
 
+/**
+ * ### Logs the given message to the console following the given format:
+ * `{TIME} | {LEVEL} | {MESSAGE}`
+ *
+ * @param {any} message The message to log
+ * @param {...any[]} args The optional arguments
+ */
 export function error(message: any, ...args: any[]) {
   print(Red, 'Error', message, args);
 }
 
+/**
+ * ### Logs the given message to the console following the given format:
+ * `{TIME} | {LEVEL} | {MESSAGE}`
+ *
+ * @param {any} message The message to log
+ * @param {...any[]} args The optional arguments
+ */
 export function good(message: any, ...args: any[]) {
   print(Green, 'Good ', message, args);
 }
