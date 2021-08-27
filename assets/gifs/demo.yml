@@ -4,11 +4,11 @@ config:
   # like `/bin/bash -l`, `ls`, or any other commands
   # the default is bash for Linux
   # or powershell.exe for Windows
-  command: powershell.exe "yarn test"
+  command: powershell.exe 'yarn test:js'
 
   # Specify the current working directory path
   # the default is the current working directory path
-  # cwd:
+  cwd: C:\1dev\Tools\Abbie\assets\gifs
 
   # Export additional ENV variables
   env:
@@ -17,7 +17,7 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 100
+  cols: 120
 
   # Explicitly set the number of rows
   # or use `auto` to take the current
@@ -49,10 +49,9 @@ config:
   # Don't forget to add a backgroundColor style with a null as type
   frameBox:
     type: floating
-    title: Abbie
+    title: Terminalizer
     style:
       border: 0px black solid
-      backgroundColor: none transparent
       # boxShadow: none
       # margin: 0px
 
@@ -76,7 +75,7 @@ config:
   # Font family
   # You can use any font that is installed on your machine
   # in CSS-like syntax
-  fontFamily: 'Delugia Mono Nerd Font, Lucida Console, Ubuntu Mono, Monospace'
+  fontFamily: 'Monaco, Lucida Console, Ubuntu Mono, Monospace'
 
   # The size of the font
   fontSize: 12
@@ -111,15 +110,25 @@ config:
 
 # Records, feel free to edit them
 records:
-  - delay: 0
-    content: "\e[2J\e[m\e[HAbbie\r\nCopyright (C) jamesinaxx under the MIT license\r\n\r\nGet the latest version at https://www.npmjs.com/package/abbie\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
-  - delay: 0
-    content: "\r\n\r\nnpm\e[m start\e[?25h"
-  - delay: 1000
-    content: "\e[25l\r\n\r\n> abbie@1.1.9 start C:\\1dev\\Abbie\r\n> node ./tests/test.js\e[?25h\r\n"
-  - delay: 0
-    content: "\e\r\n[32m21:04:58\e[m | Info  | \e[96m[Tests\\JSTest]\e[m Hey y'all wassup\r\n"
-  - delay: 0
-    content: "\e[32m21:04:58\e[m | \e[31mError\e[m | \e[96m[Tests\\JSTest]\e[m \e[31mOopsie i made a booboo and this is an error\e[32m\r\n21:04:58\e[m | \e[32mGood \e[m | \e[96m[Tests\\JSTest]\e[m \e[32mThis is some good news!\e[m\e[20X\e[32m\r\n21:04:58\e[m | \e[33mWarn \e[m | \e[96m[Tests\\JSTest]\e[m \e[33mSomething nearly failed...\e[m\e[17X\e[m\e[17X\e[32m\r\n21:31:24\e[m | \e[90mDebug\e[m | \e[96m[Tests\\JSTest]\e[m \e[90mUhh yeah\e[m\e[35X\r\n"
+  - delay: 100
+    content: 'S'
+  - delay: 100
+    content: 't'
+  - delay: 100
+    content: 'a'
+  - delay: 100
+    content: 'r'
+  - delay: 100
+    content: 't'
   - delay: 3000
-    content: "\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a"
+    content: "\r\n\r\n\e[m\e[37mAbbie, Developed with ❤️ by jamesinaxx\r\n"
+  - delay: 1000
+    content: "\e[m\e[4m13:11:51\e[24m | Info  | Everything is fine\r\n"
+  - delay: 100
+    content: "\e[m\e[4m13:11:51\e[24m | \e[32mGood  \e[m| \e[32mEverything is great!\r\n"
+  - delay: 100
+    content: "\e[m\e[4m13:11:51\e[24m | \e[33mWarn  \e[m| \e[33mMaybe check this out\r\n"
+  - delay: 100
+    content: "\e[m\e[4m13:11:51\e[24m | \e[31mError \e[m| \e[31mUh, that wasn't meant to happen\r\n"
+  - delay: 100
+    content: "\e[m\e[4m13:11:51\e[24m | \e[90mDebug \e[m| \e[90mThis won't shown be in production\r\n"

@@ -2,12 +2,12 @@ import { log, error, warn, good, debug } from '../dist/index';
 
 console.log('Beginning Typescript testing!');
 
-log("Hey y'all wassup");
+log('Everything is fine');
 
-warn('Something nearly failed...');
+good('Everything is great!');
 
-error('Oopsie i made a booboo and this is an error');
+warn('Maybe check this out');
 
-good('This is some good news!');
+error("Uh, that wasn't meant to happen");
 
-debug("This won't be in production");
+debug("This won't shown be in production");
