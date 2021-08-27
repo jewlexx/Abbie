@@ -135,10 +135,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:12.20.21":
-  version: 12.20.21
-  resolution: "@types/node@npm:12.20.21"
-  checksum: 080b2f471ba5d4dd9a31e3e93b5dc0364523de14e0d6a6aa9b3383e5567c87d541959638a2f03c2047b7c799a36731927516a264e17c3616e8a9589f9d08cb4e
+"@types/node@npm:14.17.12":
+  version: 14.17.12
+  resolution: "@types/node@npm:14.17.12"
+  checksum: 7efbce3781a0ea5d7a39bca3c5ed9c4e4d99fed3483fb2a89670aeb049cd9d25f1ddecd8fb58420fd92de371278721ddd6e3ad95c4f55992592f1ac5d1dedf98
   languageName: node
   linkType: hard
 
@@ -256,7 +256,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "abbie@workspace:."
   dependencies:
-    "@types/node": 12.20.21
+    "@types/node": 14.17.12
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
     "@vercel/ncc": 0.29.2
