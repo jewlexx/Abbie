@@ -17,12 +17,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 120
+  cols: 80
 
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 30
+  rows: 10
 
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -48,8 +48,8 @@ config:
   # To hide the title use the value null
   # Don't forget to add a backgroundColor style with a null as type
   frameBox:
-    type: floating
-    title: Terminalizer
+    type: solid
+    title: 'Abbie, Developed with ❤️  by jamesinaxx'
     style:
       border: 0px black solid
       # boxShadow: none
@@ -70,15 +70,15 @@ config:
 
   # Cursor style can be one of
   # `block`, `underline`, or `bar`
-  cursorStyle: block
+  cursorStyle: bar
 
   # Font family
   # You can use any font that is installed on your machine
   # in CSS-like syntax
-  fontFamily: 'Monaco, Lucida Console, Ubuntu Mono, Monospace'
+  fontFamily: 'Delugia Mono Nerd Font, Lucida Console, Ubuntu Mono, Monospace'
 
   # The size of the font
-  fontSize: 12
+  fontSize: 24
 
   # The height of lines
   lineHeight: 1
@@ -111,18 +111,6 @@ config:
 # Records, feel free to edit them
 records:
   - delay: 100
-    content: 'S'
-  - delay: 100
-    content: 't'
-  - delay: 100
-    content: 'a'
-  - delay: 100
-    content: 'r'
-  - delay: 100
-    content: 't'
-  - delay: 3000
-    content: "\r\n\r\n\e[m\e[37mAbbie, Developed with ❤️ by jamesinaxx\r\n"
-  - delay: 1000
     content: "\e[m\e[4m13:11:51\e[24m | Info  | Everything is fine\r\n"
   - delay: 100
     content: "\e[m\e[4m13:11:51\e[24m | \e[32mGood  \e[m| \e[32mEverything is great!\r\n"
@@ -131,4 +119,6 @@ records:
   - delay: 100
     content: "\e[m\e[4m13:11:51\e[24m | \e[31mError \e[m| \e[31mUh, that wasn't meant to happen\r\n"
   - delay: 100
-    content: "\e[m\e[4m13:11:51\e[24m | \e[90mDebug \e[m| \e[90mThis won't shown be in production\r\n"
+    content: "\e[m\e[4m13:11:51\e[24m | \e[90mDebug \e[m| \e[90mThis won't shown be in production"
+  - delay: 3000
+    content: ' '
