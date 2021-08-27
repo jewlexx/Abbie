@@ -1,5 +1,7 @@
 import { log, error, warn, good, debug } from '../dist/index';
 
+console.log('Beginning Typescript testing!');
+
 log("Hey y'all wassup");
 
 warn('Something nearly failed...');

@@ -1,4 +1,9 @@
-import * as chalk from 'chalk';
+const Reset = '\x1b[0m';
+const Underline = '\x1b[4m';
+const Red = '\x1b[31m';
+const Green = '\x1b[32m';
+const Yellow = '\x1b[33m';
+const Gray = '\x1b[90m';
 
 function time() {
   const date = new Date();
@@ -26,11 +31,12 @@ function time() {
   return time;
 }
 
-function print(colour: chalk.Chalk, type: string, message: any, args: any[]) {
-  console.log(
-    `${chalk.underline(time())} | ${colour(type)} | ${colour(message)}`,
-    ...args,
-  );
+function format(modifier: string, message: any): string {
+  return `${modifier}${message}${Reset}`;
+}
+
+function print(colour: string, type: string, message: any, args: any[]) {
+  console.log(`${format(Underline, time())} | ${format(colour, type)} | ${format(colour, message)}`, ...args);
 }
 
 /**
@@ -38,23 +44,23 @@ function print(colour: chalk.Chalk, type: string, message: any, args: any[]) {
  * `{TIME} | {LEVEL} | {MESSAGE}`
  */
 export function log(message: any, ...args: any[]): void {
-  print(chalk.white, 'Info ', message, args);
+  print('', 'Info ', message, args);
 }
 
 export function debug(message: any, ...args: any[]): void {
   if (process.env.DEBUG === 'true') return;
 
-  print(chalk.grey, 'Debug', message, args);
+  print(Gray, 'Debug', message, args);
 }
 
 export function warn(message: any, ...args: any[]) {
-  print(chalk.yellow, 'Warn ', message, args);
+  print(Yellow, 'Warn ', message, args);
 }
 
 export function error(message: any, ...args: any[]) {
-  print(chalk.red, 'Error', message, args);
+  print(Red, 'Error', message, args);
 }
 
 export function good(message: any, ...args: any[]) {
-  print(chalk.green, 'Good ', message, args);
+  print(Green, 'Good ', message, args);
 }

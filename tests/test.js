@@ -1,5 +1,7 @@
 const { log, error, warn, good, debug } = require('../dist/index');
 
+console.log('Beginning Javascript testing!');
+
 log("Hey y'all wassup");
 
 warn('Something nearly failed...');
