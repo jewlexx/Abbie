@@ -101,10 +101,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.7.2":
-  version: 16.7.2
-  resolution: "@types/node@npm:16.7.2"
-  checksum: aef77c109e2fd93b5dc6ec0a57a0878aaaa58adf0e63d9618d67b116ad3f2a3eb2589a99deaf9fda4a0805068b2533e3d2cf8e8dc3572251c498ec3dc929a76c
+"@types/node@npm:12.20.21":
+  version: 12.20.21
+  resolution: "@types/node@npm:12.20.21"
+  checksum: 080b2f471ba5d4dd9a31e3e93b5dc0364523de14e0d6a6aa9b3383e5567c87d541959638a2f03c2047b7c799a36731927516a264e17c3616e8a9589f9d08cb4e
   languageName: node
   linkType: hard
 
@@ -123,7 +123,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "abbie@workspace:."
   dependencies:
-    "@types/node": ^16.7.2
+    "@types/node": 12.20.21
     "@vercel/ncc": ^0.29.2
     chalk: ^4.1.2
     eslint: ^7.32.0
