@@ -1,11 +1,11 @@
-import { log } from '../dist/index';
+import { log, error, warn, good, debug } from '../dist/index';
 
 log("Hey y'all wassup");
 
-log('Oopsie i made a booboo and this is an error', 1);
+warn('Something nearly failed...');
 
-log('This is some good news!', 2);
+error('Oopsie i made a booboo and this is an error');
 
-log('Something nearly failed...', 3);
+good('This is some good news!');
 
-log('Uhh yeah', 4);
+debug("This won't be in production");

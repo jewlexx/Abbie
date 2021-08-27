@@ -21,55 +21,37 @@ function time() {
     second = '0' + second;
   }
 
-  const timeVar = `${hour}:${minute}:${second}`;
+  const time = `${hour}:${minute}:${second}`;
 
-  return timeVar;
+  return time;
+}
+
+function print(type: string, message: any, args: any[]) {
+  console.log(`${chalk.green(time())} | ${type} | ${message}`, ...args);
 }
 
 /**
  * ### Logs the given message to the console following the given format:
- * `{TIME} | {MODULE} | {MESSAGE}`
- *
- * **For more info on each of these and more, check the {@link https://github.com/jamesinaxx/Abbie/wiki/Reference wiki on github}**
- *
- *
- * @param {string} message The message you would like to log
- * @param {number} level The level of log message, view types {@link https://github.com/jamesinaxx/Abbie/wiki/Reference here}
+ * `{TIME} | {LEVEL} | {MESSAGE}`
  */
-function log(message: any, ...args: any[]) {
-  const debugBool = process.env.DEBUG == 'true';
-
-  let lvl = 'Info ';
-
-  // switch (level) {
-  //   case 1:
-  //     message = chalk.red(message);
-  //     lvl = chalk.red('Error');
-  //     break;
-  //   case 2:
-  //     message = chalk.green(message);
-  //     lvl = chalk.green('Good ');
-  //     break;
-  //   case 3:
-  //     message = chalk.yellow(message);
-  //     lvl = chalk.yellow('Warn ');
-  //     break;
-  //   case 4:
-  //     message = chalk.grey(message);
-  //     lvl = chalk.grey('Debug');
-  //     break;
-  //   default:
-  //     lvl = 'Info ';
-  //     break;
-  // }
-  if (!debugBool && lvl === chalk.grey('Debug')) {
-    return;
-  }
-  console.log(
-    `${chalk.green(time())} | ${lvl} | ${chalk.cyanBright(
-      '[' + 'TEMP' + ']',
-    )} ${message}`,
-  );
+export function log(message: any, ...args: any[]): void {
+  print('Info ', message, args);
 }
 
-export { log };
+export function debug(message: any, ...args: any[]): void {
+  if (process.env.DEBUG === 'true') return;
+
+  print(chalk.grey('Debug'), message, args);
+}
+
+export function warn(message: any, ...args: any[]) {
+  print(chalk.yellow('Warn '), message, args);
+}
+
+export function error(message: any, ...args: any[]) {
+  print(chalk.red('Error'), message, args);
+}
+
+export function good(message: any, ...args: any[]) {
+  print(chalk.green('Good '), message, args);
+}

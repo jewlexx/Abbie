@@ -1,11 +1,11 @@
-const abbie = require('../dist/index');
+const { log, error, warn, good, debug } = require('../dist/index');
 
-abbie.log("Hey y'all wassup");
+log("Hey y'all wassup");
 
-abbie.log('Oopsie i made a booboo and this is an error', 1);
+warn('Something nearly failed...');
 
-abbie.log('This is some good news!', 2);
+error('Oopsie i made a booboo and this is an error');
 
-abbie.log('Something nearly failed...', 3);
+good('This is some good news!');
 
-abbie.log('Uhh yeah', 4);
+debug("This won't be in production");
