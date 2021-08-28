@@ -1,7 +1,7 @@
 {
   "name": "abbie",
   "displayName": "Abbie",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A simple, clean, javascript logger",
   "main": "dist/index.js",
   "author": "jamesinaxx",
