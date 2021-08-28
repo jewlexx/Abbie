@@ -2,8 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=flat-square)](http://npmjs.com/abbie)
-
-<!-- [![Build Status](https://jamesinaxx.me/buildStatus/icon?job=AbbiePipeline%2Fpublic&style=flat-square)](https://jamesinaxx.me/job/AbbiePipeline/job/public/) -->
+[![Build Status](https://jamesinaxx.me/ci/buildStatus/icon?job=Abbie&style=flat-square)](https://jamesinaxx.me/ci/job/Abbie/)
 
 A simple, clean, javascript logger
 
