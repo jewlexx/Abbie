@@ -1,8 +1,9 @@
 # Abbie
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=flat-square)](http://npmjs.com/abbie)
-[![Build Status](https://jamesinaxx.me/ci/buildStatus/icon?job=Abbie&style=flat-square)](https://jamesinaxx.me/ci/job/Abbie/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/abbie?color=pink&style=for-the-badge)](http://npmjs.com/abbie)
+[![Build Status](https://img.shields.io/travis/com/jamesinaxx/abbie?style=for-the-badge)](https://app.travis-ci.com/jamesinaxx/Abbie)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/jamesinaxx/Abbie.svg?logo=lgtm&logoWidth=18&style=for-the-badge)](https://lgtm.com/projects/g/jamesinaxx/Abbie/context:javascript)
 
 A simple, clean, javascript logger
 
