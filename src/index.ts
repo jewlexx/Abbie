@@ -1,5 +1,4 @@
 const Reset = '\x1b[0m';
-const Underline = '\x1b[4m';
 const Red = '\x1b[31m';
 const Green = '\x1b[32m';
 const Yellow = '\x1b[33m';
@@ -36,7 +35,7 @@ function format(modifier: string, message: any): string {
 }
 
 function print(colour: string, type: string, message: any, args: any[]) {
-  console.log(`${format(Underline, getTime())} | ${format(colour, type)} | ${format(colour, message)}`, ...args);
+  console.log(`[${getTime()}] ${format(colour, type)} | ${format(colour, message)}`, ...args);
 }
 
 /**
