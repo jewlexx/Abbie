@@ -2,7 +2,6 @@ language: node_js
 node_js: lts/*
 jobs:
   include:
-    - stage: Install dependencies
-      script: yarn install --immutable
     - stage: Test
+      install: yarn --immutable
       script: yarn test
