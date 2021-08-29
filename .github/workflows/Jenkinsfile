@@ -10,14 +10,14 @@ pipeline {
       steps {
         echo 'Beggining Abbie Build'
         sh '''#!/bin/bash
-node -v &&  npm -v &&  npm ci &&  set e &&  npx tsc'''
+node -v &&  npm -v &&  yarn -v && yarn install --immutable'''
       }
     }
 
     stage('Build') {
       steps {
         sh '''#!/bin/bash
-npm run coverage'''
+yarn test'''
       }
     }
 
@@ -30,6 +30,5 @@ npm run coverage'''
   }
   environment {
     DEBUG = 'true'
-    CODECOV_TOKEN = '7095f287-2ab4-4492-bd7d-cfb042624a55'
   }
 }
