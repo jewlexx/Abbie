@@ -1,0 +1,7 @@
+language: node_js
+node_js: lts/*
+jobs:
+  include:
+    - stage: Test
+      install: yarn --immutable
+      script: yarn test
