@@ -1,8 +1,9 @@
-const Reset = '\x1b[0m';
-const Red = '\x1b[31m';
-const Green = '\x1b[32m';
-const Yellow = '\x1b[33m';
-const Gray = '\x1b[90m';
+import { red, green, yellow, gray, white, Chalk } from 'chalk';
+// const Reset = '\x1b[0m';
+// const Red = '\x1b[31m';
+// const Green = '\x1b[32m';
+// const Yellow = '\x1b[33m';
+// const Gray = '\x1b[90m';
 
 function getTime() {
   const date = new Date();
@@ -30,11 +31,11 @@ function getTime() {
   return time;
 }
 
-function format(modifier: string, message: any): string {
-  return `${modifier}${message}${Reset}`;
+function format(modifier: Chalk, message: any): string {
+  return modifier(message);
 }
 
-function print(colour: string, type: string, message: any, args: any[]) {
+function print(colour: Chalk, type: string, message: any, args: any[]) {
   console.log(`[${getTime()}] ${format(colour, type)} | ${format(colour, message)}`, ...args);
 }
 
@@ -46,7 +47,7 @@ function print(colour: string, type: string, message: any, args: any[]) {
  * @param {...any[]} args The optional arguments
  */
 export function log(message: any, ...args: any[]): void {
-  print('', 'Info ', message, args);
+  print(white, 'Info ', message, args);
 }
 
 /**
@@ -59,7 +60,7 @@ export function log(message: any, ...args: any[]): void {
 export function debug(message: any, ...args: any[]): void {
   if (process.env.DEBUG === 'true') return;
 
-  print(Gray, 'Debug', message, args);
+  print(gray, 'Debug', message, args);
 }
 
 /**
@@ -70,7 +71,7 @@ export function debug(message: any, ...args: any[]): void {
  * @param {...any[]} args The optional arguments
  */
 export function warn(message: any, ...args: any[]) {
-  print(Yellow, 'Warn ', message, args);
+  print(yellow, 'Warn ', message, args);
 }
 
 /**
@@ -81,7 +82,7 @@ export function warn(message: any, ...args: any[]) {
  * @param {...any[]} args The optional arguments
  */
 export function error(message: any, ...args: any[]) {
-  print(Red, 'Error', message, args);
+  print(red, 'Error', message, args);
 }
 
 /**
@@ -92,5 +93,5 @@ export function error(message: any, ...args: any[]) {
  * @param {...any[]} args The optional arguments
  */
 export function good(message: any, ...args: any[]) {
-  print(Green, 'Good ', message, args);
+  print(green, 'Good ', message, args);
 }
