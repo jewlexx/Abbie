@@ -1,21 +1,11 @@
+import * as sc from 'supports-color';
 const Reset = '\x1b[0m';
 const Red = '\x1b[31m';
 const Green = '\x1b[32m';
 const Yellow = '\x1b[33m';
 const Gray = '\x1b[90m';
 
-export function supportsColor() {
-  try {
-    return !!(
-      process &&
-      ((process.env && process.env.FORCE_COLOR !== undefined) ||
-        (process.stdout && !process.stdout.isTTY && process.env.VSCODE_PID) ||
-        (process.stdout && process.stdout.isTTY))
-    );
-  } catch (err) {
-    return false;
-  }
-}
+const supportsColour = (sc as any).createSupportsColor(process.stdout);
 
 function getTime() {
   const date = new Date();
@@ -44,7 +34,7 @@ function getTime() {
 }
 
 function format(modifier: string, message: any): string {
-  return supportsColor() ? `${modifier}${message}${Reset}` : message;
+  return supportsColour.stdout ? `${modifier}${message}${Reset}` : message;
 }
 
 function print(colour: string, type: string, message: any, args: any[]) {
